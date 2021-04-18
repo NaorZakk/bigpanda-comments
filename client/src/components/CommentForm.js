@@ -56,7 +56,7 @@ function CommentForm(props) {
     }
 
     return (
-        <form dir="rtl">
+        <form >
             <TextField
                 label="Email"
                 value={email}
@@ -82,9 +82,12 @@ function CommentForm(props) {
                 error={messageError}
 
             />
-            <Button submit variant="contained" color="primary" onClick={handleSubmit}>
-                Submit
-        </Button>
+            <div dir="rtl">
+                <Button submit variant="contained" color="primary" onClick={handleSubmit} >
+                    Submit
+                </Button>
+            </div>
+
         </form>
 
     )
